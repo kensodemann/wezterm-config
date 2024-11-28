@@ -17,9 +17,15 @@ config.keys = {
 	{
 		key = "i",
 		mods = "SHIFT|ALT",
-		action = act.SplitPane({
-			direction = "Down",
-			size = { Percent = 25 },
+		action = act.Multiple({
+			act.SplitPane({
+				direction = "Down",
+				size = { Percent = 25 },
+			}),
+			act.SplitPane({
+				direction = "Right",
+				size = { Percent = 50 },
+			}),
 		}),
 	},
 }
