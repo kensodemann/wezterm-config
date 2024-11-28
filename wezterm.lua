@@ -13,6 +13,9 @@ config.font =
 	wezterm.font("ComicShannsMono Nerd Font Mono", { weight = "Regular", stretch = "Normal", style = "Normal" })
 config.font_size = 16.0
 
+config.initial_cols = 132
+config.initial_rows = 32
+
 config.keys = {
 	{
 		key = "i",
