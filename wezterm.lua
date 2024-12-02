@@ -23,7 +23,7 @@ config.keys = {
 		action = act.Multiple({
 			act.SplitPane({
 				direction = "Down",
-				size = { Percent = 25 },
+				size = { Cells = 10 },
 			}),
 			act.SplitPane({
 				direction = "Right",
