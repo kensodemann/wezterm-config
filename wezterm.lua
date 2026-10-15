@@ -31,6 +31,13 @@ config.keys = {
 			}),
 		}),
 	},
+	-- This WezTerm build sends Shift+Enter as a plain Enter. Cursor CLI
+	-- treats the CSI-u sequence as a newline instead of submitting.
+	{
+		key = "Enter",
+		mods = "SHIFT",
+		action = act.SendString("\x1b[13;2u"),
+	},
 }
 
 -- and finally, return the configuration to wezterm
